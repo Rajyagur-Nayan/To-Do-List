@@ -11,7 +11,7 @@ import { AuthUser } from "./Component/AuthComponent/AuthContext";
 export default function Pages() {
   const [authUser] = AuthUser();
   return (
-    <div className="dark:bg-black dark:text-white">
+    <div>
       <Routes>
         <Route path="/" element={<App />} />
         <Route
