@@ -18,7 +18,7 @@ const uri = process.env.URI;
 
 try {
   mongoose
-    .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect(uri)
     .then(() => {
       console.log(" Database connected");
     })
