@@ -7,7 +7,9 @@ export default function Card() {
 
   const showData = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/list/readList/${id}`);
+      const res = await axios.get(
+        `https://to-do-list-2jvx.onrender.com/list/readList/${id}`
+      );
       setTask(res.data.List);
     } catch (error) {
       console.log(error);

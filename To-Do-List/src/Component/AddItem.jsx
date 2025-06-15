@@ -31,11 +31,14 @@ export default function AddItem() {
 
     try {
       if (id) {
-        await axios.post("http://localhost:3000/list/createList", {
-          title: title.trim(),
-          description: description.trim(),
-          id: id,
-        });
+        await axios.post(
+          "https://to-do-list-2jvx.onrender.com/list/createList",
+          {
+            title: title.trim(),
+            description: description.trim(),
+            id: id,
+          }
+        );
 
         // Show success message
         toast.success("List added successfully");
@@ -63,7 +66,7 @@ export default function AddItem() {
     const fetch = async () => {
       try {
         await axios
-          .get(`http://localhost:3000/list/readList/${id}`)
+          .get(`https://to-do-list-2jvx.onrender.com/list/readList/${id}`)
           .then((res) => {
             setTasks(res.data.List);
           });
@@ -77,7 +80,9 @@ export default function AddItem() {
   const handleDelete = async (taskId) => {
     try {
       await axios
-        .delete(`http://localhost:3000/list/deleteList/${taskId}`)
+        .delete(
+          `https://to-do-list-2jvx.onrender.com/list/deleteList/${taskId}`
+        )
         .then((res) => {
           if (res) {
             toast.success("task deleted Successfully");

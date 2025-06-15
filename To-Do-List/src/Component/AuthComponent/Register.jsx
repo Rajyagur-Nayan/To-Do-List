@@ -27,7 +27,7 @@ const Register = () => {
 
       await axios
 
-        .post("http://localhost:3000/user/register", userinfo)
+        .post("https://to-do-list-2jvx.onrender.com/user/register", userinfo)
         .then((res) => {
           if (res) {
             toast.success("User created SuccessFully");

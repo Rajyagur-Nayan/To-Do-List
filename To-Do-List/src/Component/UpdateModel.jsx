@@ -12,10 +12,13 @@ export default function UpdateModel({ task, setRefresh }) {
     try {
       await axios
 
-        .patch(`http://localhost:3000/list/updateList/${task._id}`, {
-          title,
-          description,
-        })
+        .patch(
+          `https://to-do-list-2jvx.onrender.com/list/updateList/${task._id}`,
+          {
+            title,
+            description,
+          }
+        )
         .then((res) => {
           if (res) {
             toast.success("Update Successfully");
