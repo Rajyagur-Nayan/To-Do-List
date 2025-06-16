@@ -1,4 +1,5 @@
 import React from "react";
+import Register from "./Register";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
@@ -30,6 +31,8 @@ export default function Login() {
           }
           localStorage.setItem("id", JSON.stringify(res.data.others._id));
           localStorage.setItem("userData", JSON.stringify(userinfo));
+          document.getElementById("my_modal_3").close();
+          window.location.reload();
         });
     } catch (error) {
       console.log(error);
@@ -111,9 +114,9 @@ export default function Login() {
               </label>
               <div className="flex mt-10">
                 <div className="ml-10 mt-2 cursor-pointer flex">
-                  <a href="/" className="btn btn-neutral">
-                    Login
-                  </a>
+                  <div>
+                    <button className="btn btn-neutral">Login</button>
+                  </div>
                   <div>
                     <Link to="/register" className="btn ml-[30%] ">
                       Register

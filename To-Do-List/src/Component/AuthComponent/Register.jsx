@@ -4,9 +4,11 @@ import Footer from "../Footer";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -32,6 +34,7 @@ const Register = () => {
         .then((res) => {
           if (res) {
             toast.success("User created SuccessFully");
+            navigate("/");
           }
         });
 
@@ -96,13 +99,12 @@ const Register = () => {
             <p className="text-red-400 text-sm mb-2">Email is required.</p>
           )}
 
-          <Link
-            to="/"
+          <button
             type="submit"
-            className="w-full p-2 hover:bg-blue-700 transition  text-white font-semibold py-2 rounded-lg"
+            className="w-full bg-blue-600 hover:bg-blue-700 transition text-white font-semibold py-2 rounded-lg"
           >
             Register
-          </Link>
+          </button>
         </form>
       </div>
 
