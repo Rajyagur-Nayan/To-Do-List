@@ -115,7 +115,7 @@ export default function Login() {
               <div className="flex mt-10">
                 <div className="ml-10 mt-2 cursor-pointer flex">
                   <div>
-                    <button className="btn btn-neutral">Login</button>
+                    <button className="btn btn-">Login</button>
                   </div>
                   <div>
                     <Link to="/register" className="btn btn-neutral ml-[30%] ">

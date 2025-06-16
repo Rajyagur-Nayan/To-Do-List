@@ -24,7 +24,6 @@ export default function Navbar() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -51,23 +50,29 @@ export default function Navbar() {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-white text-2xl md:ml-[20%]">
-              My List
-            </a>
+            <a className=" text-white text-2xl md:ml-[20%]">ToDo-App</a>
           </div>
           <div className="navbar-center text-white  hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <li>
-                <a href="/">Home </a>
+              <li className="px-3 py-2">
+                <a href="/" className="hover:bg-gray-700 ">
+                  Home
+                </a>
               </li>
-              <li>
-                <a href="/about">About</a>
+              <li className="px-3 py-2">
+                <a href="/about" className="hover:bg-gray-700 ">
+                  About
+                </a>
               </li>
-              <li>
-                <a href="/contact">Contact</a>
+              <li className="px-3 py-2">
+                <a href="/contact" className="hover:bg-gray-700 ">
+                  Contact
+                </a>
               </li>
-              <li>
-                <a href="/addItem">Add item</a>
+              <li className="px-3 py-2">
+                <a href="/addItem" className="hover:bg-gray-700 ">
+                  Add item
+                </a>
               </li>
             </ul>
           </div>
