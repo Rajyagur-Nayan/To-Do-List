@@ -41,9 +41,9 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <dialog id="my_modal_3" className="modal">
-        <div className="modal-box">
+    <div className="bg-gray-900">
+      <dialog id="my_modal_3" className="modal  ">
+        <div className="modal-box bg-gray-900 text-white">
           <form action="">
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
               ✕
@@ -55,7 +55,7 @@ export default function Login() {
             <h3 className="font-bold text-2xl mb-[5%] ml-[40%]">Login </h3>
             <div>
               <span> Email</span>
-              <label className="input validator w-full mt-4 mb-3.5">
+              <label className="input validator w-full bg-gray-800 mt-4 mb-3.5">
                 <svg
                   className="h-[1em] opacity-50"
                   xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export default function Login() {
                 {errors.email && <p>user name is required.</p>}
               </label>
               <span>Password</span>
-              <label className="input validator w-full mt-3">
+              <label className="input validator bg-gray-800 w-full mt-3">
                 <svg
                   className="h-[1em] opacity-50"
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ export default function Login() {
                     <button className="btn btn-neutral">Login</button>
                   </div>
                   <div>
-                    <Link to="/register" className="btn ml-[30%] ">
+                    <Link to="/register" className="btn btn-neutral ml-[30%] ">
                       Register
                     </Link>
                   </div>

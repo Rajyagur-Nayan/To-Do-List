@@ -41,11 +41,11 @@ export default function UpdateModel({ task, setRefresh }) {
       {/* Put this part before </body> tag */}
       <input type="checkbox" id="my_modal_6" className="modal-toggle" />
       <div className="modal" role="dialog">
-        <div className="modal-box ">
-          <h3 className="font-bold text-2xl mb-[5%] ml-[40%]">Update List </h3>
+        <div className="modal-box bg-gray-900">
+          <h3 className="font-bold text-2xl mb-[5%] ml-[35%]">Update List </h3>
           <div>
             <span>Title</span>
-            <label className="input validator ml-3 md:ml-[13%] mb-3.5 mt-2 md:mt-0">
+            <label className="input validator bg-gray-800 ml-3 md:ml-[13%] mb-3.5 mt-2 md:mt-0">
               <input
                 type="text"
                 required
@@ -56,7 +56,7 @@ export default function UpdateModel({ task, setRefresh }) {
             </label>
             <div>
               <span> Description</span>
-              <label className="input validator ml-2.5 mb-5 mt-2 md:mt-0">
+              <label className="input validator bg-gray-800 ml-2.5 mb-5 mt-2 md:mt-0">
                 <input
                   type="text"
                   required

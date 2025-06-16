@@ -96,7 +96,7 @@ export default function AddItem() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gray-800">
       {/* Navbar */}
       <Navbar />
 
@@ -127,7 +127,7 @@ export default function AddItem() {
 
           <button
             type="submit"
-            className="btn w-full bg-blue-600 text-white hover:bg-blue-700 transition"
+            className="btn  w-full bg-blue-600 text-white hover:bg-blue-700 transition"
           >
             Add Task
           </button>
@@ -155,7 +155,7 @@ export default function AddItem() {
       </div>
 
       {/* Footer */}
-      <div className="mt-auto">
+      <div className="mt-auto bg-gray-900">
         <Footer />
       </div>
     </div>

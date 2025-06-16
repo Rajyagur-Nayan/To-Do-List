@@ -53,7 +53,7 @@ const Register = () => {
       </div>
       <div className="flex items-center justify-center min-h-screen bg-gray-800 px-4">
         <form
-          className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-2xl w-full max-w-sm"
+          className="bg-gray-900 p-8 rounded-xl shadow-2xl w-full max-w-sm"
           onSubmit={handleSubmit(onsubmit)}
         >
           <h2 className="text-3xl font-bold text-center text-blue-500 mb-6">
@@ -109,7 +109,7 @@ const Register = () => {
       </div>
 
       {/* footer  */}
-      <div>
+      <div className="">
         <Footer />
       </div>
     </div>

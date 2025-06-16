@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900 text-white">
+    <div className="min-h-screen flex flex-col bg-gray-800 text-white">
       {/* Navbar */}
       <Navbar />
 

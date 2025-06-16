@@ -6,13 +6,13 @@ import DemoTask from "./DemoTask";
 
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900 text-white">
+    <div className="min-h-screen flex flex-col bg-gray-800 text-white">
       {/* Navbar */}
       <Navbar />
 
       {/* About Section */}
       <main className="flex-grow px-4 sm:px-8 py-10">
-        <section className="max-w-3xl mx-auto bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700">
+        <section className="max-w-3xl mx-auto bg-gray-900 rounded-2xl shadow-lg p-8 border border-gray-700">
           <h1 className="text-4xl font-bold text-blue-400 mb-6 text-center">
             About This App
           </h1>

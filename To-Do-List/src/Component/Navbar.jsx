@@ -7,8 +7,8 @@ export default function Navbar() {
   const [authUser] = AuthUser();
 
   return (
-    <div>
-      <div className="bg-gray-800 ">
+    <div className="bg-gray-900 text-white">
+      <div>
         <div className="navbar justify-items-center shadow-sm ">
           <div className="navbar-start">
             <div className="dropdown">
@@ -35,7 +35,7 @@ export default function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-gray-800 text-white text-white-content rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
                 <li>
                   <a href="/">Home </a>
@@ -51,9 +51,11 @@ export default function Navbar() {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-2xl md:ml-[20%]">My List</a>
+            <a className="btn btn-ghost text-white text-2xl md:ml-[20%]">
+              My List
+            </a>
           </div>
-          <div className="navbar-center  hidden lg:flex">
+          <div className="navbar-center text-white  hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
                 <a href="/">Home </a>
@@ -76,7 +78,7 @@ export default function Navbar() {
             ) : (
               <div>
                 <a
-                  className="btn"
+                  className="btn btn-neutral"
                   onClick={() =>
                     document.getElementById("my_modal_3").showModal()
                   }
