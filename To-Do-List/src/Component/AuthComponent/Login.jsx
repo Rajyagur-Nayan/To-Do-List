@@ -1,5 +1,4 @@
 import React from "react";
-import Register from "./Register";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
@@ -112,9 +111,9 @@ export default function Login() {
               </label>
               <div className="flex mt-10">
                 <div className="ml-10 mt-2 cursor-pointer flex">
-                  <Link to="/" className="btn btn-neutral">
+                  <a href="/" className="btn btn-neutral">
                     Login
-                  </Link>
+                  </a>
                   <div>
                     <Link to="/register" className="btn ml-[30%] ">
                       Register

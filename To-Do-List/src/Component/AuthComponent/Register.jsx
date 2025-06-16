@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const {
@@ -95,12 +96,13 @@ const Register = () => {
             <p className="text-red-400 text-sm mb-2">Email is required.</p>
           )}
 
-          <button
+          <Link
+            to="/"
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 transition text-white font-semibold py-2 rounded-lg"
+            className="w-full p-2 hover:bg-blue-700 transition  text-white font-semibold py-2 rounded-lg"
           >
             Register
-          </button>
+          </Link>
         </form>
       </div>
 

@@ -3,6 +3,7 @@ import Navbar from "./Component/Navbar";
 import DemoTask from "./Component/DemoTask";
 import Card from "./Component/Card";
 import Footer from "./Component/Footer";
+import { Link } from "react-router-dom";
 
 export default function App() {
   return (
@@ -26,12 +27,12 @@ export default function App() {
           <h2 className="text-2xl sm:text-3xl ml-0 md:ml-[5%]  font-semibold text-amber-300">
             Your List
           </h2>
-          <a
-            href="/addItem"
+          <Link
+            to="/addItem"
             className="btn btn-secondary text-white shadow-md hover:shadow-lg transition"
           >
             Add Task
-          </a>
+          </Link>
         </div>
         <Card />
       </section>

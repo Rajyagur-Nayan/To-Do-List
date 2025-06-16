@@ -18,10 +18,7 @@ export default function Pages() {
           path="/addItem"
           element={authUser ? <AddItem /> : <Navigate to="/register" />}
         />
-        <Route
-          path="/register"
-          element={authUser ? <Register /> : <Navigate to="/" />}
-        />
+        <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
