@@ -4,17 +4,29 @@ export default function Footer() {
   return (
     <div>
       <footer className="footer footer-horizontal footer-center bg-gray-900 text-white text-content p-10 ">
-        <nav className="grid grid-flow-col gap-4">
-          <a href="/about" className="link link-hover">
+        <nav className="grid grid-flow-col  gap-4">
+          <a
+            href="/"
+            className="link  link-hover hover:bg-gray-800 p-3 hover:no-underline rounded-2xl"
+          >
             Home
           </a>
-          <a href="/about" className="link link-hover">
+          <a
+            href="/about"
+            className="link link-hover hover:bg-gray-800 p-3  hover:no-underline rounded-2xl"
+          >
             About us
           </a>
-          <a href="/contact" className="link link-hover">
+          <a
+            href="/contact"
+            className="link link-hover hover:bg-gray-800 p-3 hover:no-underline rounded-2xl"
+          >
             Contact
           </a>
-          <a href="/addItem" className="link link-hover">
+          <a
+            href="/addItem"
+            className="link link-hover hover:bg-gray-800 p-3 hover:no-underline rounded-2xl"
+          >
             Add item
           </a>
         </nav>

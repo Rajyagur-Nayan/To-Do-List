@@ -2,9 +2,8 @@ import React from "react";
 
 const demoTasks = [
   { id: 1, title: "Demo Task", description: "I am going to the gym" },
-  { id: 2, title: "Demo Task", description: "I am going to the gym" },
-  { id: 3, title: "Demo Task", description: "I am going to the gym" },
-  { id: 4, title: "Demo Task", description: "I am going to the gym" },
+  { id: 2, title: "Demo Task", description: "I am going to the school" },
+  { id: 3, title: "Demo Task", description: "I am going to the Collage" },
 ];
 
 export default function DemoTask() {
